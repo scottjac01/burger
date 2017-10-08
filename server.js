@@ -51,14 +51,15 @@ app.get("/", function (req, res) {
 });
 
 // Total list of burger entries
-    app.get("/api/burgers", function(req, res) {
-        connection.query("SELECT * FROM burgers;", function (err, data) {
-        if (err) {
-            //send back error
-            return res.status(500).end();
-        }
-        res.json(data);
+app.get("/api/burgers", function(req, res) {
+    connection.query("SELECT * FROM burgers;", function (err, data) {
+    if (err) {
+        //send back error
+        return res.status(500).end();
+    }
+    res.json(data);
     });
+});
 
 // Create a new burger
 app.post("/api/burgers", function (req, res) {
