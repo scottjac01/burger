@@ -1,15 +1,21 @@
 {
   "name": "eat-a-burger",
   "version": "1.0.0",
-  "description": "App where you can eat a burger.",
+  "description": "App let's you mcreate burgers, and then eat burgers",
   "main": "node server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/scottjac01/burger.git"
   },
+  "keywords": [
+    "mysql",
+    "express",
+    "handlebars"
+  ],
   "author": "Scott Jackson",
   "license": "ISC",
   "bugs": {
@@ -20,6 +26,6 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.1",
     "express-handlebars": "^3.0.0",
-    "mysql": "^2.14.1"
+    "mysql": "^2.15.0"
   }
 }
